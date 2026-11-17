@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrisha Dhall — Creative Technologist, Designer & Developer</title>
+  <meta name="description" content="Portfolio of Adrisha Dhall — 18-year-old Creative Technologist, UI/UX Designer, and Developer studying at Newton School of Technology (NST), Hyderabad.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Background Canvas -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-grid"></div>
+
+  <!-- Global Header / Navigation -->
+  <header class="site-header" id="top">
+    <div class="header-container">
+      <a href="#top" class="brand-logo">
+        <span class="logo-symbol">AD</span>
+        <span class="logo-text">Adrisha<span class="dot">.</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#roles-skills" class="nav-link">Roles & Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#education" class="nav-link">Journey</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Interactive Mode Lens: Design vs Code -->
+        <div class="role-lens-toggle" role="group" aria-label="Perspective Switcher">
+          <button type="button" class="lens-btn active" data-lens="all">All</button>
+          <button type="button" class="lens-btn" data-lens="design">✦ Design</button>
+          <button type="button" class="lens-btn" data-lens="code">&lt;/&gt; Code</button>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="about">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>18 y/o Tech & Design Explorer • Open for Internships</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-name">Adrisha Dhall</span>.
+            <br>
+            <span class="hero-subtext">Designing sleek interfaces, engineering resilient code.</span>
+          </h1>
+
+          <p class="hero-description">
+            Passionate creative technologist bridging high-fidelity aesthetics with clean frontend architecture.
+            Currently pursuing my undergraduate studies at <strong>Newton School of Technology (NST), Hyderabad</strong>, with deep roots from <strong>Bhavan's in Raipur, Chhattisgarh</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Past Projects</span>
+              <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#roles-skills" class="btn btn-outline">Explore Capabilities</a>
+          </div>
+
+          <!-- Quick Information Badges -->
+          <div class="bio-meta-row">
+            <div class="meta-item">
+              <span class="meta-label">Age</span>
+              <span class="meta-value">18 Years Old</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span class="meta-label">College</span>
+              <span class="meta-value">NST Hyderabad</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span class="meta-label">Alma Mater</span>
+              <span class="meta-value">Bhavan's, Raipur (C.G.)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Developer / Designer Bento Hero Card -->
+        <div class="hero-interactive-card">
+          <div class="bento-card bento-profile">
+            <div class="card-header-bar">
+              <span class="dot-ctrl red"></span>
+              <span class="dot-ctrl yellow"></span>
+              <span class="dot-ctrl green"></span>
+              <span class="terminal-title">adrisha-dhall.config.json</span>
+            </div>
+
+            <div class="code-preview-body">
+              <pre><code><span class="c-key">const</span> <span class="c-var">profile</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"ADRISHA DHALL"</span>,
+  <span class="c-prop">age</span>: <span class="c-num">18</span>,
+  <span class="c-prop">location</span>: <span class="c-str">"Hyderabad & Raipur, India"</span>,
+  <span class="c-prop">college</span>: <span class="c-str">"Newton School of Technology (NST)"</span>,
+  <span class="c-prop">school</span>: <span class="c-str">"Bhavan's (Raipur, Chhattisgarh)"</span>,
+  <span class="c-prop">roles</span>: [<span class="c-str">"Product Designer"</span>, <span class="c-str">"Frontend Developer"</span>],
+  <span class="c-prop">passion</span>: <span class="c-str">"Pixel-perfect UI & scalable architectures"</span>,
+  <span class="c-prop">status</span>: <span class="c-str">"Building tomorrow's digital web"</span>
+};</code></pre>
+            </div>
+
+            <div class="interactive-snippet-footer">
+              <div class="metric-pill">
+                <span class="metric-num">10+</span>
+                <span class="metric-desc">Web Projects</span>
+              </div>
+              <div class="metric-pill">
+                <span class="metric-num">100%</span>
+                <span class="metric-desc">Curiosity & Craft</span>
+              </div>
+              <div class="metric-pill">
+                <span class="metric-num">01</span>
+                <span class="metric-desc">Vision</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLES & SKILLS SHOWCASE SECTION -->
+    <section class="section-container" id="roles-skills">
+      <div class="container">
+        <div class="section-heading-area">
+          <span class="sub-badge">Core Competencies</span>
+          <h2 class="section-title">Design Roles & Developer Disciplines</h2>
+          <p class="section-subtitle">
+            A cohesive balance of human-centered visual artistry and systematic code execution.
+          </p>
+
+          <!-- Filter Pills for Interaction -->
+          <div class="skill-filter-bar">
+            <button class="filter-btn active" data-filter="all">All Disciplines</button>
+            <button class="filter-btn" data-filter="design">UI/UX & Product Design</button>
+            <button class="filter-btn" data-filter="frontend">Frontend & Engineering</button>
+            <button class="filter-btn" data-filter="creative">Creative Tech & Tools</button>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Role Card 1: UI/UX & Design Systems (Design Lens) -->
+          <article class="role-card" data-category="design">
+            <div class="role-card-top">
+              <div class="role-icon-box design-accent">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              </div>
+              <span class="role-badge">Design Role</span>
+            </div>
+            <h3 class="role-name">Product & UI/UX Designer</h3>
+            <p class="role-desc">
+              Transforming complex user journeys into intuitive, clean, and delightful interfaces through design thinking and user empathy.
+            </p>
+            <div class="skill-chips">
+              <span class="chip">Wireframing</span>
+              <span class="chip">Design Systems</span>
+              <span class="chip">Figma & FigJam</span>
+              <span class="chip">Prototyping</span>
+              <span class="chip">User Research</span>
+              <span class="chip">Visual Hierarchy</span>
+            </div>
+            <div class="role-meter">
+              <div class="meter-label"><span>Aesthetic & Usability</span><span>95%</span></div>
+              <div class="meter-bar"><div class="meter-progress" style="width: 95%;"></div></div>
+            </div>
+          </article>
+
+          <!-- Role Card 2: Frontend Engineering (Developer Lens) -->
+          <article class="role-card" data-category="frontend">
+            <div class="role-card-top">
+              <div class="role-icon-box code-accent">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <span class="role-badge">Developer Role</span>
+            </div>
+            <h3 class="role-name">Frontend Web Engineer</h3>
+            <p class="role-desc">
+              Authoring clean, semantic HTML5, modern CSS3 layout paradigms (Flexbox, CSS Grid), and reactive interactions.
+            </p>
+            <div class="skill-chips">
+              <span class="chip">Modern HTML5</span>
+              <span class="chip">Semantic Layouts</span>
+              <span class="chip">CSS3 & Variables</span>
+              <span class="chip">Grid / Flexbox</span>
+              <span class="chip">Responsive Web</span>
+              <span class="chip">JavaScript (ES6+)</span>
+            </div>
+            <div class="role-meter">
+              <div class="meter-label"><span>Web Standards & Code</span><span>92%</span></div>
+              <div class="meter-bar"><div class="meter-progress code" style="width: 92%;"></div></div>
+            </div>
+          </article>
+
+          <!-- Role Card 3: Creative Technologist (Hybrid Lens) -->
+          <article class="role-card" data-category="creative">
+            <div class="role-card-top">
+              <div class="role-icon-box creative-accent">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              </div>
+              <span class="role-badge">Hybrid Role</span>
+            </div>
+            <h3 class="role-name">Creative Technologist</h3>
+            <p class="role-desc">
+              Bridging motion design, micro-animations, glassmorphic themes, and developer-centric interactions into coherent digital products.
+            </p>
+            <div class="skill-chips">
+              <span class="chip">CSS Keyframe Animations</span>
+              <span class="chip">Micro-interactions</span>
+              <span class="chip">Aesthetic Typography</span>
+              <span class="chip">Dark/Light Themes</span>
+              <span class="chip">Performance</span>
+            </div>
+            <div class="role-meter">
+              <div class="meter-label"><span>Motion & Interaction</span><span>90%</span></div>
+              <div class="meter-bar"><div class="meter-progress creative" style="width: 90%;"></div></div>
+            </div>
+          </article>
+
+          <!-- Role Card 4: Architecture & Developer Tooling -->
+          <article class="role-card" data-category="frontend">
+            <div class="role-card-top">
+              <div class="role-icon-box tools-accent">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <span class="role-badge">Tooling & Workflow</span>
+            </div>
+            <h3 class="role-name">Developer Workflow & Git</h3>
+            <p class="role-desc">
+              Practicing structured version control, modular code architecture, cross-browser compatibility, and accessibility (a11y).
+            </p>
+            <div class="skill-chips">
+              <span class="chip">Git & GitHub</span>
+              <span class="chip">VS Code Mastery</span>
+              <span class="chip">Cross-Browser QA</span>
+              <span class="chip">SEO Best Practices</span>
+              <span class="chip">Accessibility</span>
+            </div>
+            <div class="role-meter">
+              <div class="meter-label"><span>Workflow & Rigor</span><span>88%</span></div>
+              <div class="meter-bar"><div class="meter-progress tools" style="width: 88%;"></div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAST PROJECTS & CASE STUDIES -->
+    <section class="section-container bg-subtle" id="projects">
+      <div class="container">
+        <div class="section-heading-area">
+          <span class="sub-badge">Selected Work</span>
+          <h2 class="section-title">Past Project Achievements</h2>
+          <p class="section-subtitle">
+            A curated collection of web applications, design systems, and developer interfaces.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Aura UI Component System -->
+          <article class="project-card">
+            <div class="project-visual aura-theme">
+              <div class="mockup-window">
+                <div class="mock-header">
+                  <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+                  <span class="mock-url">auraui.design/components</span>
+                </div>
+                <div class="mock-content">
+                  <div class="mock-pill">Design Token v2.0</div>
+                  <div class="mock-bars">
+                    <span class="bar bar-accent"></span>
+                    <span class="bar bar-light"></span>
+                    <span class="bar bar-muted"></span>
+                  </div>
+                  <div class="mock-button-preview">Interactive UI Kit</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <div class="project-tags">
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">CSS Grid & Variables</span>
+                <span class="tag">Figma</span>
+              </div>
+              <h3 class="project-title">Aura UI — Minimalist Design Tokens & Component Kit</h3>
+              <p class="project-description">
+                A design system built with fluid typography, responsive layout tokens, and accessible WCAG AAA compliant color combinations for high-speed prototyping.
+              </p>
+              <div class="project-achievement-callout">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                <span>Achievement: Adopted by 25+ student developers at NST for hackathons.</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="link-item">Case Study &rarr;</a>
+                <a href="#contact" class="link-item link-secondary">View Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: ChronoFlow Developer Workspace -->
+          <article class="project-card">
+            <div class="project-visual chronoflow-theme">
+              <div class="mockup-window">
+                <div class="mock-header">
+                  <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+                  <span class="mock-url">chronoflow.dev/dashboard</span>
+                </div>
+                <div class="mock-content terminal-look">
+                  <div class="code-line"><span class="c-dim">$</span> chronoflow start --task "Hackathon Build"</div>
+                  <div class="code-line"><span class="c-green">&#10003; Focus Session:</span> Active (45m sprint)</div>
+                  <div class="timeline-visual">
+                    <span class="time-block filled"></span>
+                    <span class="time-block filled"></span>
+                    <span class="time-block active"></span>
+                    <span class="time-block"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <div class="project-tags">
+                <span class="tag">Frontend Architecture</span>
+                <span class="tag">Semantic HTML</span>
+                <span class="tag">Modern CSS</span>
+              </div>
+              <h3 class="project-title">ChronoFlow — Developer Time & Focus Dashboard</h3>
+              <p class="project-description">
+                A minimalist developer dashboard designed to reduce screen fatigue and boost flow-state focus through customizable ambient themes and keyboard shortcuts.
+              </p>
+              <div class="project-achievement-callout">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Achievement: 99/100 Lighthouse Performance & Accessibility score.</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="link-item">Live Preview &rarr;</a>
+                <a href="#contact" class="link-item link-secondary">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: NST Campus Pulse Portal -->
+          <article class="project-card">
+            <div class="project-visual pulse-theme">
+              <div class="mockup-window">
+                <div class="mock-header">
+                  <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+                  <span class="mock-url">nst-pulse.internal/community</span>
+                </div>
+                <div class="mock-content campus-mock">
+                  <div class="campus-stat">
+                    <span class="badge-nst">NST HYDERABAD</span>
+                    <span class="stat-highlight">#1 Hackathon Hub</span>
+                  </div>
+                  <div class="mock-card-list">
+                    <div class="mini-card">UI/UX Workshop <span>Tomorrow</span></div>
+                    <div class="mini-card">AI Sprint <span>Active</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <div class="project-tags">
+                <span class="tag">Community Portal</span>
+                <span class="tag">Responsive Design</span>
+                <span class="tag">Bento Layout</span>
+              </div>
+              <h3 class="project-title">CampusPulse — Student Innovation & Event Hub</h3>
+              <p class="project-description">
+                A community-centric web platform tailored for Newton School of Technology students to collaborate on tech ventures, exchange design feedback, and find team mates.
+              </p>
+              <div class="project-achievement-callout">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span>Achievement: Selected as Best Student Initiative Concept at NST.</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="link-item">Read Showcase &rarr;</a>
+                <a href="#contact" class="link-item link-secondary">Architecture</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & HONORS -->
+    <section class="section-container" id="achievements">
+      <div class="container">
+        <div class="section-heading-area">
+          <span class="sub-badge">Recognition & Milestones</span>
+          <h2 class="section-title">Past Achievements & Honors</h2>
+          <p class="section-subtitle">
+            Demonstrated commitment to excellence in collegiate coding, design competitions, and academic leadership.
+          </p>
+        </div>
+
+        <div class="achievements-bento">
+          <!-- Achievement 1 -->
+          <div class="bento-award-card highlight-card">
+            <div class="award-header">
+              <div class="award-badge-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <span class="award-year">2024</span>
+            </div>
+            <h3 class="award-title">NST Tech Sprint Finalist & Top UI Showcase</h3>
+            <p class="award-org">Newton School of Technology, Hyderabad</p>
+            <p class="award-detail">
+              Awarded for creating the highest-rated minimalist prototype, combining accessible design systems with seamless CSS micro-interactions under a 36-hour sprint.
+            </p>
+          </div>
+
+          <!-- Achievement 2 -->
+          <div class="bento-award-card">
+            <div class="award-header">
+              <div class="award-badge-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <span class="award-year">2023 - 2024</span>
+            </div>
+            <h3 class="award-title">Young Creative Innovator Recognition</h3>
+            <p class="award-org">Regional Tech Exhibition, Chhattisgarh</p>
+            <p class="award-detail">
+              Recognized at 18 for innovative frontend web concepts and user-friendly interface designs empowering local high-school students.
+            </p>
+          </div>
+
+          <!-- Achievement 3 -->
+          <div class="bento-award-card">
+            <div class="award-header">
+              <div class="award-badge-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <span class="award-year">2023</span>
+            </div>
+            <h3 class="award-title">Academic & Computer Science Excellence</h3>
+            <p class="award-org">Bhavan's, Raipur (Chhattisgarh)</p>
+            <p class="award-detail">
+              Graduated high school with highest honours in Computer Science, spearheading school IT exhibitions and peer programming workshops.
+            </p>
+          </div>
+
+          <!-- Achievement 4 -->
+          <div class="bento-award-card">
+            <div class="award-header">
+              <div class="award-badge-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="award-year">Ongoing</span>
+            </div>
+            <h3 class="award-title">100+ Days of Creative Frontend & CSS Craft</h3>
+            <p class="award-org">Open Source & Web Community</p>
+            <p class="award-detail">
+              Consistently exploring bleeding-edge web features: CSS Subgrid, Container Queries, Scroll-driven animations, and design token integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATIONAL JOURNEY & BACKGROUND -->
+    <section class="section-container bg-subtle" id="education">
+      <div class="container">
+        <div class="section-heading-area">
+          <span class="sub-badge">Roots & Milestones</span>
+          <h2 class="section-title">My Educational Journey</h2>
+          <p class="section-subtitle">
+            From foundational school education in Raipur to next-generation tech and engineering in Hyderabad.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline item 1: College NST Hyderabad -->
+          <div class="timeline-card">
+            <div class="timeline-marker">
+              <div class="marker-dot current"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="tag-status">Current College Education</span>
+                <span class="timeline-date">2024 — Present</span>
+              </div>
+              <h3 class="timeline-title">Newton School of Technology (NST), Hyderabad</h3>
+              <p class="timeline-degree">Undergraduate Studies in Computer Science & Next-Gen Technology</p>
+              <p class="timeline-body">
+                Immersed in project-driven computing, data structures, full-stack web engineering, and product design methodologies. Active contributor to campus tech hubs and design sprints in Hyderabad.
+              </p>
+              <div class="timeline-tags">
+                <span>Hyderabad, Telangana</span>
+                <span>Full-Stack Development</span>
+                <span>UI/UX Innovation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline item 2: High School Bhavan's Raipur -->
+          <div class="timeline-card">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="tag-status past">School Alma Mater</span>
+                <span class="timeline-date">Foundation Years</span>
+              </div>
+              <h3 class="timeline-title">Bhavan's, Raipur (Chhattisgarh)</h3>
+              <p class="timeline-degree">Senior Secondary & High School Education</p>
+              <p class="timeline-body">
+                Nurtured a strong academic foundation in Science, Mathematics, and Computer Science. Developed my very first web pages and discovered my lifelong passion for design aesthetics and computer technology.
+              </p>
+              <div class="timeline-tags">
+                <span>Raipur, Chhattisgarh</span>
+                <span>Computer Science Focus</span>
+                <span>Design & Tech Leadership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVELOPER INTERACTION TERMINAL & CONTACT SECTION -->
+    <section class="section-container" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-intro">
+            <span class="sub-badge">Get in Touch</span>
+            <h2 class="section-title">Let's build something aesthetic together.</h2>
+            <p class="contact-text">
+              Whether you have an exciting internship opportunity, a freelance design/dev collaboration, or just want to chat about design systems and web standards, my inbox is always open.
+            </p>
+
+            <div class="direct-contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Email Me</span>
+                  <a href="mailto:adrisha.dhall@example.com" class="contact-link" id="emailLink">adrisha.dhall@example.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Base Locations</span>
+                  <span class="contact-val">NST Hyderabad & Raipur, Chhattisgarh</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-card">
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Adrisha will get back to you soon.'); this.reset();">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userName">Your Name</label>
+                  <input type="text" id="userName" placeholder="e.g. Alex Morgan" required>
+                </div>
+                <div class="form-group">
+                  <label for="userEmail">Your Email</label>
+                  <input type="email" id="userEmail" placeholder="alex@domain.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectInterest">I'm interested in discussing</label>
+                <select id="projectInterest">
+                  <option value="internship">Internship Opportunity</option>
+                  <option value="uiux">UI/UX & Product Design</option>
+                  <option value="frontend">Frontend Web Development</option>
+                  <option value="collaboration">Collaborative Project</option>
+                  <option value="sayhi">Just Saying Hello</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="userMsg">Message</label>
+                <textarea id="userMsg" rows="4" placeholder="Tell me about your idea or role..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p class="footer-brand"><strong>ADRISHA DHALL</strong> • 18 y/o Designer & Developer</p>
+        <p class="footer-academic">Newton School of Technology (Hyderabad) • Alum: Bhavan's (Raipur, C.G.)</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="social-links">
+          <a href="#" class="social-link" title="GitHub">GitHub</a>
+          <a href="#" class="social-link" title="LinkedIn">LinkedIn</a>
+          <a href="#" class="social-link" title="Figma">Figma</a>
+          <a href="#" class="social-link" title="Twitter / X">X</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Adrisha Dhall. Crafted with minimalist HTML & CSS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Light Vanilla Script for Role-Lens Switching, Mobile Menu & Skill Filters -->
+  <script>
+    // Lens Toggle (Design vs Code vs All)
+    const lensButtons = document.querySelectorAll('.lens-btn');
+    const roleCards = document.querySelectorAll('.role-card');
+
+    lensButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        lensButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const lens = btn.dataset.lens;
+
+        roleCards.forEach(card => {
+          if (lens === 'all') {
+            card.style.display = 'flex';
+          } else if (lens === 'design') {
+            card.style.display = (card.dataset.category === 'design' || card.dataset.category === 'creative') ? 'flex' : 'none';
+          } else if (lens === 'code') {
+            card.style.display = (card.dataset.category === 'frontend' || card.dataset.category === 'creative') ? 'flex' : 'none';
+          }
+        });
+      });
+    });
+
+    // Skill Filter Bar
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+
+        roleCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Mobile Hamburger Menu
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mainNav = document.getElementById('mainNav');
+    if (mobileBtn && mainNav) {
+      mobileBtn.addEventListener('click', () => {
+        mainNav.classList.toggle('nav-open');
+        mobileBtn.classList.toggle('is-active');
+      });
+      // Close on link click
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mainNav.classList.remove('nav-open');
+          mobileBtn.classList.remove('is-active');
+        });
+      });
+    }
+
+    // Active Navigation Highlight on Scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      let currentSection = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.scrollY >= sectionTop) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
